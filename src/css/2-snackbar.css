@@ -1,0 +1,146 @@
+.delay-input{
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 360px;
+  height: 40px;
+  outline: none;
+}
+
+.delay-input:hover{
+  border: 1px solid #000;
+}
+
+.delay-input:focus{
+  border: 1px solid #4e75ff;
+ 
+}
+
+
+.delay-label{
+display: flex;
+flex-direction: column;
+gap:8px;
+font-family: var(--font-family);
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+letter-spacing: 0.04em;
+color: #2e2f42;
+margin-bottom: 16px;
+
+}
+legend{
+margin-inline: 24px;
+font-family: var(--font-family);
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+letter-spacing: 0.04em;
+color: #2e2f42;
+}
+
+fieldset {
+  border-radius: 4px;
+  stroke-width: 1px;
+  stroke: #808080;
+  width: 360px;
+  height: 64px;
+  margin-bottom: 24px;
+  padding:0;   
+}
+fieldset:hover{
+  stroke: #000;
+}
+
+
+.fieldset-label{
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #2e2f42;
+}
+.radio-group{
+  display: flex;
+  justify-content: center;
+  gap:48px;
+}
+
+.input{
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+}
+
+
+.input { 
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+}
+
+
+.custom-radio-dot {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #808080; 
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-right: 8px;
+  position: relative;
+  background-color: transparent; 
+  transition: border-color 0.2s ease-in-out; 
+  flex-shrink: 0;
+}
+
+
+.custom-radio-dot::before {
+  content: '';
+  display: block;
+  width: 0;   
+  height: 0;  
+  background-color: #4e75ff; 
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0); 
+  transition: all 0.2s ease-in-out; 
+}
+
+
+.input[type="radio"]:checked + .custom-radio-dot::before {
+  width: 16px; 
+  height: 16px;
+  transform: translate(-50%, -50%) scale(1); 
+}
+
+.fieldset-label:hover .custom-radio-dot {
+  border-color: #000000;
+}
+
+
+
+
+button{
+ border-radius: 8px;
+ padding: 8px 16px;
+ width: 360px;
+ height: 40px;
+ background: #4e75ff;
+ font-family: var(--font-family);
+ font-weight: 500;
+ font-size: 16px;
+ line-height: 150%;
+ letter-spacing: 0.04em;
+ color: #fff;
+ border:transparent
+}
+button:hover{
+  background:  #6c8cff;;
+}
